@@ -6,10 +6,10 @@ This repository serves as a live log of my daily/weekly practice, transforming U
 
 ## 🚀 UI Component & Screen Log
 
-| Component / Layout | Core Concepts Explored | Preview |
-| :--- | :--- | :--- |
-| **01. Journal Entry Card** | `Row`, `Column`, `Modifiers`, Image Loading | *[Screenshot coming soon]* |
-| *Next component...* | *...* | *...* |
+| Component / Layout             | Core Concepts Explored | Preview |
+|:-------------------------------| :--- | :--- |
+| **01. App Name to be decided** | `Row`, `Column`, `Modifiers`, Image Loading | *[Screenshot coming soon]* |
+| *Next component...*            | *...* | *...* |
 
 ## 🛠️ Tech Stack
 * **Language:** Kotlin
