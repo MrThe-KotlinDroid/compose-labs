@@ -1,21 +1,17 @@
-# 🧪 Jetpack Compose Labs
+# LabsApp - Jetpack Compose Workspace
 
-A dedicated workspace for exploring declarative UI, state management, and modern native Android architecture using Kotlin and Jetpack Compose.
+This repository is my active workspace for learning native Android development using Jetpack Compose. I am using this project to build out various UI components and document the core concepts I learn along the way.
 
-This repository serves as a live log of my daily/weekly practice, transforming UI concepts and random application screens into highly optimized native code.
+## Development Timeline
 
-## 🚀 UI Component & Screen Log
+### [June 20, 2026] 1. GreetingCard
+This is my introductory component to understand the absolute basics of the Jetpack Compose framework.
+* **`@Composable` Annotation:** Learned how to define declarative UI functions.
+* **`@Preview` Annotation:** Learned how to render and view the UI component directly inside Android Studio while coding, without needing to boot up a full emulator or device.
 
-| Component / Layout             | Core Concepts Explored | Preview |
-|:-------------------------------| :--- | :--- |
-| **01. App Name to be decided** | `Row`, `Column`, `Modifiers`, Image Loading | *[Screenshot coming soon]* |
-| *Next component...*            | *...* | *...* |
-
-## 🛠️ Tech Stack
-* **Language:** Kotlin
-* **UI Toolkit:** Jetpack Compose
-* **Architecture:** MVVM, Unidirectional Data Flow (UDF)
-* **Tools:** Android Studio, Git
-
----
-*Building strong fundamentals, one recomposition at a time.*
+### [June 21, 2026] 2. BirthdayCard
+This component focuses on structuring basic layouts and formatting typography.
+* **`Text` Composable:** Learned how to display and manipulate basic text on the screen.
+* **Layouts (`Row` & `Column`):** Learned how to align and stack multiple UI components either horizontally or vertically.
+* **Text Styling:** Adjusted text appearance, specifically targeting properties like `fontSize` and `lineHeight`.
+* **Scale-independent Pixels (`sp`):** Learned why we use `sp` for text sizing instead of fixed pixels—it ensures the text scales dynamically if a user changes the global font size settings on their physical phone.
