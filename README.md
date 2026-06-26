@@ -10,8 +10,14 @@ This is my introductory component to understand the absolute basics of the Jetpa
 * **`@Preview` Annotation:** Learned how to render and view the UI component directly inside Android Studio while coding, without needing to boot up a full emulator or device.
 
 ### [June 21, 2026] 2. BirthdayCard
-This component focuses on structuring basic layouts and formatting typography.
+This UI focuses on structuring basic layouts and formatting typography.
 * **`Text` Composable:** Learned how to display and manipulate basic text on the screen.
 * **Layouts (`Row` & `Column`):** Learned how to align and stack multiple UI components either horizontally or vertically.
 * **Text Styling:** Adjusted text appearance, specifically targeting properties like `fontSize` and `lineHeight`.
 * **Scale-independent Pixels (`sp`):** Learned why we use `sp` for text sizing instead of fixed pixels—it ensures the text scales dynamically if a user changes the global font size settings on their physical phone.
+
+### [June 27, 2026] 3. Compose Article
+This UI is a practice exercise to build a standard article layout.
+* **Images:** Learned how to import and display images using the `Image` composable.
+* **String Resources & Padding:** Learned how to extract hardcoded text into the `strings.xml` file and reference it in the code using `stringResource()`. Also learned how to specify padding for individual sides (like `start` and `end`) rather than just applying it to `all` sides.
+* **Text Alignment:** Used `TextAlign.Justify` to format paragraph text cleanly within its boundaries, understanding the difference between a text container's size and the screen size.
