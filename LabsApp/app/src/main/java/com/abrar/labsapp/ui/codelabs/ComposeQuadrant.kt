@@ -1,0 +1,118 @@
+package com.abrar.labsapp.ui.codelabs
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.abrar.labsapp.R
+import com.abrar.labsapp.ui.theme.LabsAppTheme
+
+@Composable
+fun ComposeQuadrant(modifier: Modifier = Modifier) {
+    Column(modifier) {
+        Row(Modifier.weight(1f)) {
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxSize()
+                    .background(Color(0xFFEADDFF))
+                    .padding(16.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.compose_quadrant_text_title),
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(bottom = 16.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.compose_quadrant_text_description),
+                        textAlign = TextAlign.Justify
+                    )
+                }
+            }
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxSize()
+                    .background(Color(0xFFD0BCFF))
+                    .padding(16.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.compose_quadrant_image_title),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+                Text(
+                    text = stringResource(R.string.compose_quadrant_image_description),
+                    textAlign = TextAlign.Justify
+                )
+            }
+        }
+        Row(Modifier.weight(1f)) {
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxSize()
+                    .background(Color(0xFFB69DF8))
+                    .padding(16.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.compose_quadrant_row_title),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+                Text(
+                    text = stringResource(R.string.compose_quadrant_row_description),
+                    textAlign = TextAlign.Justify
+                )
+            }
+            Column(
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxSize()
+                    .background(Color(0xFFF6EDFF))
+                    .padding(16.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.compose_quadrant_column_title),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+                Text(
+                    text = stringResource(R.string.compose_quadrant_column_description),
+                    textAlign = TextAlign.Justify
+                )
+            }
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ComposeQuadrantPreview() {
+    LabsAppTheme {
+        ComposeQuadrant()
+    }
+}

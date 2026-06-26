@@ -26,3 +26,9 @@ This UI is a practice exercise to build a standard article layout.
 This component is a practice exercise to build a centered task completion screen.
 * **Global Parent Alignment:** Learned how to utilize `horizontalAlignment = Alignment.CenterHorizontally` once on a parent `Column` container to instantly center all child elements, removing the need to apply alignments individually to each child.
 * **Typography Weights:** Explored text styling further by introducing the `FontWeight.Bold` property to emphasize primary status text.
+
+### [June 27, 2026] [5. Compose Quadrant](https://github.com/MrThe-KotlinDroid/compose-labs/blob/main/LabsApp/app/src/main/java/com/abrar/labsapp/ui/codelabs/ComposeQuadrant.kt)
+This is the final practice component of the basic layouts section, focusing on building a perfectly symmetrical 4-box grid.
+* **Proportional Space Distribution:** Learned how to use `Modifier.weight(1f)` to evenly divide available horizontal and vertical screen space among sibling `Row` and `Column` containers, allowing the layout to scale perfectly on any screen size without hardcoded pixel values.
+* **The "Modifier Order" Rule:** Discovered that the sequence of modifiers completely changes the UI. Learned that `.background().padding()` fills the entire space with color before pushing the text inward, whereas `.padding().background()` pushes inward first, creating an uncolored margin around the box.
+* **The "Use It Once" Rule (Modifier Propagation):** Learned a critical architectural rule: always pass the parameter `modifier` (lowercase) exclusively to the root/top-level parent container to respect external constraints, and always use a fresh `Modifier` (capitalized) for internal children to prevent double-applying spacing rules and breaking the layout.

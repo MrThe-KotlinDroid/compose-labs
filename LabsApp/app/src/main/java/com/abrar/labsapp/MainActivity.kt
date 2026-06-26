@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.abrar.labsapp.ui.codelabs.TaskManager
+import com.abrar.labsapp.ui.codelabs.ComposeQuadrant
 import com.abrar.labsapp.ui.theme.LabsAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             LabsAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TaskManager(
+                    ComposeQuadrant(
                         modifier = Modifier
                             .padding(innerPadding)
                             .fillMaxSize()
