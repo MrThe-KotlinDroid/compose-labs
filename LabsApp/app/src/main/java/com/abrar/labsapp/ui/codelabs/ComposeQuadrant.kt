@@ -23,89 +23,60 @@ import com.abrar.labsapp.ui.theme.LabsAppTheme
 fun ComposeQuadrant(modifier: Modifier = Modifier) {
     Column(modifier) {
         Row(Modifier.weight(1f)) {
-            Column(
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFFEADDFF))
-                    .padding(16.dp)
-            ) {
-                Column(
-                    modifier = Modifier.padding(16.dp)
-                ) {
-                    Text(
-                        text = stringResource(R.string.compose_quadrant_text_title),
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(bottom = 16.dp)
-                    )
-                    Text(
-                        text = stringResource(R.string.compose_quadrant_text_description),
-                        textAlign = TextAlign.Justify
-                    )
-                }
-            }
-            Column(
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFFD0BCFF))
-                    .padding(16.dp)
-            ) {
-                Text(
-                    text = stringResource(R.string.compose_quadrant_image_title),
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(bottom = 16.dp)
-                )
-                Text(
-                    text = stringResource(R.string.compose_quadrant_image_description),
-                    textAlign = TextAlign.Justify
-                )
-            }
+            ComposableInfoCard(
+                title = stringResource(R.string.compose_quadrant_text_title),
+                description = stringResource(R.string.compose_quadrant_text_description),
+                backgroundColor = Color(0xFFEADDFF),
+                modifier = Modifier.weight(1f)
+            )
+            ComposableInfoCard(
+                title = stringResource(R.string.compose_quadrant_image_title),
+                description = stringResource(R.string.compose_quadrant_image_description),
+                backgroundColor = Color(0xFFD0BCFF),
+                modifier = Modifier.weight(1f)
+            )
         }
         Row(Modifier.weight(1f)) {
-            Column(
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFFB69DF8))
-                    .padding(16.dp)
-            ) {
-                Text(
-                    text = stringResource(R.string.compose_quadrant_row_title),
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(bottom = 16.dp)
-                )
-                Text(
-                    text = stringResource(R.string.compose_quadrant_row_description),
-                    textAlign = TextAlign.Justify
-                )
-            }
-            Column(
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFFF6EDFF))
-                    .padding(16.dp)
-            ) {
-                Text(
-                    text = stringResource(R.string.compose_quadrant_column_title),
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(bottom = 16.dp)
-                )
-                Text(
-                    text = stringResource(R.string.compose_quadrant_column_description),
-                    textAlign = TextAlign.Justify
-                )
-            }
+            ComposableInfoCard(
+                title = stringResource(R.string.compose_quadrant_row_title),
+                description = stringResource(R.string.compose_quadrant_row_description),
+                backgroundColor = Color(0xFFB69DF8),
+                modifier = Modifier.weight(1f)
+            )
+            ComposableInfoCard(
+                title = stringResource(R.string.compose_quadrant_column_title),
+                description = stringResource(R.string.compose_quadrant_column_description),
+                backgroundColor = Color(0xFFF6EDFF),
+                modifier = Modifier.weight(1f)
+            )
         }
+    }
+}
+
+@Composable
+private fun ComposableInfoCard(
+    title: String,
+    description: String,
+    backgroundColor: Color,
+    modifier: Modifier = Modifier
+) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(backgroundColor)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = title,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+        Text(
+            text = description,
+            textAlign = TextAlign.Justify
+        )
     }
 }
 
