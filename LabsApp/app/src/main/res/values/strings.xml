@@ -15,4 +15,9 @@
     <string name="compose_quadrant_row_description">A layout composable that places its children in a horizontal sequence.</string>
     <string name="compose_quadrant_column_title">Column composable</string>
     <string name="compose_quadrant_column_description">A layout composable that places its children in a vertical sequence.</string>
+    <string name="profile_name">Md. Abrar Hamim</string>
+    <string name="job_title">Software Engineer</string>
+    <string name="phone_number">+880 1799-709992</string>
+    <string name="social_handle">\@abrarhamim</string>
+    <string name="email_address">abrarhamim2@gmail.com</string>
 </resources>
